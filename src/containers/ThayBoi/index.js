@@ -122,7 +122,13 @@ class Home extends Component {
                   renderItem={item => (
                     <List.Item>
                       <List.Item.Meta
-                        avatar={<Avatar src={item._id.avatar} />}
+                        avatar={
+                          <Avatar
+                            shape="square"
+                            size="large"
+                            src={item._id.avatar}
+                          />
+                        }
                         title={<a href="https://ant.design">{item._id.name}</a>}
                         description="Ant Design, a design language for background applications, is refined by Ant UED Team"
                       />
